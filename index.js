@@ -1,12 +1,15 @@
-function middle(x, y, z) {
-    if((x>=y && x<=z) || (x<=y && x>=z))
-        console.log("x is middle")
+Document.queryselector(“.btn”)
+Console.log(button)
+Const box= document.queryselector(“.box”);
+button.addEventListener(“click”, function (event) {
+
+let r = Math.floor(Math.random() * 256));
+let g = Math.floor(Math.random() * 256));
+let b = Math.floor(Math.random() *256));
+
+box.style.backgroundColor = ‘rgb(${r}, ${g},  ${b})’;
 }
-{
-if((y>=x && y<=z) || (y<=x && y>=z))
-        console.log("y is middle")
-}
-{
-if((z>=x && z<=y) || (y<=x && y>=z))
-        console.log("z is middle")
-}
+button.addEventListener(“Click”, MAKERGB);
+
+
+});

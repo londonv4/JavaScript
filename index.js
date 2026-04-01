@@ -43,11 +43,14 @@ const staff= {};
 Object.entries(departments).forEach(([dept, doctors])=> {
   console.log(dept, doctors);
 });
-doctors.forEach((doc) => {
-    if (!doctor[doc.name]) {
-        doctor[doc.name] = {
-         dept: doc.dept,
-        }}});
-        console.log(doctor);
+doctors.forEach((doctor) => {
+  
+        if(staff [doctor]) {
+          staff[doctor].push(dept);
+        
+       } else {
+        staff[doctor] = [dept];
+      }});
+        console.log(staff);
 // key is dept
 //  value is docto
